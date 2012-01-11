@@ -6,6 +6,7 @@
 </p>
 
 <p>
+  <%= link_to "Get", presentation_path(@presentation, :format => :pdf) %> |
   <%= link_to "Edit", edit_presentation_path(@presentation) %> |
   <%= link_to "Destroy", @presentation, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", presentations_path %>

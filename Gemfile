@@ -38,3 +38,4 @@ end
 
 gem "nested_form", :git => "git://github.com/ryanb/nested_form.git"
 gem "mocha", :group => :test
+gem "rails-latex"

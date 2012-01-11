@@ -1,0 +1,13 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\title{<%= @presentation.title %>}
+\author{Amadeus Folego}
+\begin{document}
+  \frame{\titlepage}
+  <% for slide in @presentation.slides %>
+    \frame{
+      <%= slide.content %>
+    }
+  <% end %>
+\end{document}
