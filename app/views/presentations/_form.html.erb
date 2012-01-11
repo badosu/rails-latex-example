@@ -1,0 +1,13 @@
+<%= nested_form_for @presentation do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <%= f.fields_for :slides do |slide| %>
+    <%= slide.text_area :content %>
+    <%= slide.link_to_remove "Remove Slide" %>
+  <% end %>
+  <p><%= f.link_to_add "Add a Slide", :slides %></p>
+  <p><%= f.submit %></p>
+<% end %>
