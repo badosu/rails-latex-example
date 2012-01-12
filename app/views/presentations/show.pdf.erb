@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
 \title{<%= @presentation.title %>}
-\author{Amadeus Folego}
+\author{<%= @presentation.author %>}
 \begin{document}
   \frame{\titlepage}
   <% for slide in @presentation.slides %>

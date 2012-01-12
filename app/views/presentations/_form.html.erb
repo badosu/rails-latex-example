@@ -4,6 +4,10 @@
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </p>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
   <%= f.fields_for :slides do |slide| %>
     <%= slide.text_area :content %>
     <%= slide.link_to_remove "Remove Slide" %>
